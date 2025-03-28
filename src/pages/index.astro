@@ -3,6 +3,8 @@ import ItemCard from '../components/ItemCard.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 import WelcomeContent from "../components/WelcomeContent.astro"
 import AboutContent from '../components/AboutContent.astro';
+import FrontendSkillsContent from '../components/FrontendSkillsContent.astro';
+import BackendSkillsContent from '../components/BackendSkillsContent.astro';
 ---
 
 <DefaultLayout>
@@ -12,19 +14,23 @@ import AboutContent from '../components/AboutContent.astro';
         <WelcomeContent />
       </ItemCard>
     </div>
-    <div class="col-span-1">
+    <div class="col-span-1 row-span-2">
       <ItemCard>
         <AboutContent />
       </ItemCard>
     </div>
-    <div class="col-span-1 row-span-2">
+    <div class="col-span-1 row-span-1">
       <ItemCard>Contact Details</ItemCard>
     </div>
     <div class="col-span-1">
-      <ItemCard>Frontend Skills</ItemCard>
+      <ItemCard>
+        <FrontendSkillsContent />
+      </ItemCard>
     </div>
     <div class="col-span-1">
-      <ItemCard>Backend Skills</ItemCard>
+      <ItemCard>
+        <BackendSkillsContent />
+      </ItemCard>
     </div>
     <div class="col-span-1">
       <ItemCard>Works</ItemCard>
