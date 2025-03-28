@@ -5,6 +5,7 @@ import WelcomeContent from "../components/WelcomeContent.astro"
 import AboutContent from '../components/AboutContent.astro';
 import FrontendSkillsContent from '../components/FrontendSkillsContent.astro';
 import BackendSkillsContent from '../components/BackendSkillsContent.astro';
+import ContactDetails from '../components/ContactDetails.astro';
 ---
 
 <DefaultLayout>
@@ -20,7 +21,9 @@ import BackendSkillsContent from '../components/BackendSkillsContent.astro';
       </ItemCard>
     </div>
     <div class="col-span-1 row-span-1">
-      <ItemCard>Contact Details</ItemCard>
+      <ItemCard>
+        <ContactDetails />
+      </ItemCard>
     </div>
     <div class="col-span-1">
       <ItemCard>
