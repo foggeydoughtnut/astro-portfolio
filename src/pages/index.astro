@@ -6,6 +6,7 @@ import AboutContent from '../components/AboutContent.astro';
 import FrontendSkillsContent from '../components/FrontendSkillsContent.astro';
 import BackendSkillsContent from '../components/BackendSkillsContent.astro';
 import ContactDetails from '../components/ContactDetails.astro';
+import WorksContent from '../components/WorksContent.astro';
 ---
 
 <DefaultLayout>
@@ -36,7 +37,9 @@ import ContactDetails from '../components/ContactDetails.astro';
       </ItemCard>
     </div>
     <div class="col-span-1">
-      <ItemCard>Works</ItemCard>
+      <ItemCard>
+        <WorksContent />
+      </ItemCard>
     </div>
     
   </div>
