@@ -1,31 +1,30 @@
 ---
 import ItemCard from '../components/ItemCard.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
-
+import WelcomeContent from "../components/WelcomeContent.astro"
 ---
 
 <DefaultLayout>
-  <div class="grid grid-cols-4 size-full gap-4">
+  <div class="grid grid-cols-4 h-full xl:w-2/3 lg:w-2/3 md:w-4/5 w-full gap-4">
     <div class="col-span-3">
-      <ItemCard>Item 1</ItemCard>
+      <ItemCard>
+        <WelcomeContent />
+      </ItemCard>
     </div>
     <div class="col-span-1 row-span-2">
-      <ItemCard>Item 2</ItemCard>
+      <ItemCard>About Me Card</ItemCard>
     </div>
-    <div class="col-span-1">
-      <ItemCard>Item 3</ItemCard>
-    </div>
-    <div class="col-span-1">
-      <ItemCard>Item 4</ItemCard>
-    </div>
-    <div class="col-span-1">
-      <ItemCard>Item 5</ItemCard>
+    <div class="col-span-1 row-span-2">
+      <ItemCard>Contact Details</ItemCard>
     </div>
     <div class="col-span-2">
-      <ItemCard>Item 6</ItemCard>
+      <ItemCard>Frontend Skills</ItemCard>
     </div>
     <div class="col-span-2">
-      <ItemCard>Item 7</ItemCard>
+      <ItemCard>Backend Skills</ItemCard>
+    </div>
+    <div class="col-span-1">
+      <ItemCard>Works</ItemCard>
     </div>
     
   </div>
