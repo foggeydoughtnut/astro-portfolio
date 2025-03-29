@@ -10,35 +10,35 @@ import WorksContent from '../components/WorksContent.astro';
 ---
 
 <DefaultLayout>
-  <div class="grid grid-cols-4 xl:w-2/3 lg:w-2/3 md:w-4/5 w-full gap-4">
-    <div class="col-span-3 row-span-2">
+  <div class="grid grid-cols-4 md:w-4/5 w-full gap-4">
+    <div class="lg:col-span-3 col-span-4 md:col-span-2 row-span-2">
       <ItemCard>
         <WelcomeContent />
       </ItemCard>
     </div>
-    <div class="col-span-1 row-span-3">
+    <div class="md:col-span-2 lg:col-span-1 col-span-4 row-span-3">
       <ItemCard>
         <AboutContent />
       </ItemCard>
     </div>
-    <div class="col-span-2 row-span-1">
+    <div class="col-span-4 md:col-span-2 row-span-1">
       <ItemCard>
         <ContactDetails />
       </ItemCard>
     </div>
-    <div class="col-span-1 row-span-1">
+    <div class="col-span-4 md:col-span-2 lg:col-span-1 row-span-1">
       <ItemCard>
         <FrontendSkillsContent />
       </ItemCard>
     </div>
-    <div class="col-span-2">
-      <ItemCard>
-        <WorksContent />
-      </ItemCard>
-    </div>
-    <div class="col-span-1 row-span-1">
+    <div class="col-span-4 md:col-span-2 lg:col-span-1 row-span-1">
       <ItemCard>
         <BackendSkillsContent />
+      </ItemCard>
+    </div>
+    <div class="col-span-4 lg:col-span-2">
+      <ItemCard>
+        <WorksContent />
       </ItemCard>
     </div>
     
