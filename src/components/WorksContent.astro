@@ -9,9 +9,26 @@ import CardTitle from "./CardTitle.astro";
       <h3 class="font-semibold">Work Related</h3>
       <p class="text-sm text-base-content/70">My most recent work related project was developing the Komodo Eye, the flagship network management software (NMS) at Komodo Systems.</p>
       <ul class="list-disc px-4 py-2">
-        <li>Developed the front-end for the Komodo Eye using Vue 3, TypeScript, and Tailwind CSS.</li>
-        <li>Engineered a new backend API using Golang to improve the maintainability and scalability of the application.</li>
-        <li>Migrated the build process to use Ansible for easier deployments.</li>
+        <li>
+          Upgraded the frontend tooling from Vue 2 to Vue 3, Tailwind CSS,
+          and DaisyUI, addressing customer concerns on the styling of the application while also improving the developer
+          experience expanding our potential for new features. The upgrade reduced the front-end build times to 5 seconds from 50 seconds, and allows us to have hot module reloading for faster development.
+        </li>
+        <li>
+          Architected the API to have separation of concerns which has encouraged better
+          practices making it easier to follow industry standards. Added in logging to more easily identify and troubleshoot
+          issues.
+        </li>
+        <li>
+          Reduced customer install time from a multi-day manual process to an automated 30
+          minute install via Ansible.
+        </li>
+        <li>
+          Added in built in MFA authentication to the application giving our customer's more security for their accounts.
+        </li>
+        <li>
+          Created documentation outlining the backup process and recovery process, authentication flow, style guides, and documentation for the tooling we use when developing the application.
+        </li>
       </ul>
     </div>
     <div class="flex flex-col gap-1">
